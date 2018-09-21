@@ -1,64 +1,107 @@
 /**
 Your CSS should have styles for each of the following elements:
-
     Body
         font-family: 'Arial',        'Helvetica Neue',        Helvetica,        sans-serif;
         color: '#777'
         background: '#777'
         width: '960px'
         font-size: '18px'
-
     Header,Nav,Section,Aside,and Footer
         background: '#ebebeb'
-
     Article
         color: '#ebebeb',
         background: '#777'
-
     h1 and p
         color: '#777',
         background: '#ebebeb'
-
 The widths of each section should be: 
     section: 
         495px
-
 */
-
 body {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     color: #777;
-    width: 960px;
+    width: 100%;
     font-size: 18px;
-    background: #777;
+    background-color: #777;
+    margin: 0;
+    padding: 0;
 }
 
 header,
 nav,
 section,
 aside,
-footer {
+footer,
+.fit {
     background: #ebebeb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
-
-article {
-    color: #ebebeb;
-    background: #777;
+.fat {
+    height: 10%;
+    /* width: 100%; */
+    overflow: auto;
+    clear: both;
+    /* overflow: hidden; */
 }
 
 h1,
+h2,
+h3,
 p {
     color: #777;
     background: #ebebeb;
 }
 
+h1,
+h2,
+h3 {
+    /* text-align: left; */
+    text-align: center;
+    float: left;
+    margin: 0px;
+}
+
+div>h1+h2+h3,
+    {
+    float: left;
+}
+
+p {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* span>div {
+ padding: 0px; 
+} */
+
+article {
+    color: #ebebeb;
+    background: #777;
+    margin: 30px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
 section {
-    width: 495px;
+    width: 48%;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 1024px;
+    /*keeping this, as it will float 'center'*/
+    margin: 0 auto;
 }
 
 #aside {
     float: right;
+    width: 48%;
 }
 
 #section {
